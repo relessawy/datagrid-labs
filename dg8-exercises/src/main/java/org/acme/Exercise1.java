@@ -9,23 +9,17 @@ public class Exercise1 {
 
     public static void main(String[] args) {
         // TODO: Construct a simple local cache manager with default configuration
-        DefaultCacheManager cacheManager = new DefaultCacheManager();
 
         // TODO: Define local cache configuration
-        cacheManager.defineConfiguration("local", new ConfigurationBuilder().build());
 
         // TODO: Obtain the local cache
-        Cache<String, String> cache = cacheManager.getCache("local");
 
         // TODO: Store a value
-        cache.put("laptop", "Mac");
 
         // TODO: Retrieve the value and print it out
-        System.out.printf("key = %s\n", cache.get("laptop"));
 
         // TODO: Stop the cache manager and release all resources
-        cacheManager.stop();
-        
+
         System.exit(0);
 
     }
